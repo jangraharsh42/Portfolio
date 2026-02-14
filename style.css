@@ -205,7 +205,14 @@ body {
   font-size: 1.1rem;
   border: 2px solid rgba(191, 219, 254, 0.9);
   margin-bottom: 1rem;
+  overflow: hidden;
 }
+#image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
 
 .hero-card-text {
   font-size: 0.95rem;
