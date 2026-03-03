@@ -193,24 +193,27 @@ body {
   pointer-events: none;
 }
 
-.avatar-placeholder {
-  width: 64px;
-  height: 64px;
-  border-radius: 999px;
-  background: radial-gradient(circle at top left, #4f46e5, #0b1120);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border: 2px solid rgba(191, 219, 254, 0.9);
-  margin-bottom: 1rem;
+.hero-image-wrapper {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.2rem;
   overflow: hidden;
+  border: 2px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
-#image {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.05);
 }
 
 
